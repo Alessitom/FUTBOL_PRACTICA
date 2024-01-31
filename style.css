@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+}
+
+.campo{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 50vw;
+    display: grid;
+    z-index: 1;
+}
+
+img{
+    width: 7.2vw;
+    
+}
+/*.botones{
+    position: fixed;
+    top: 40vw;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+
+}
+.oro{
+    background-color: gold;
+    font-size: 2rem;
+}
+.plata{
+    background-color: silver;
+    font-size: 2rem;
+}
+.bronce{
+    background-color: rgb(205, 127, 50);
+    font-size: 2rem;
+}*/
+.portero{
+    position: fixed;
+    top: 20.5vw;
+    left: 1vw;
+    animation: 10s aparicion;
+}
+
+.central{
+    position: fixed;
+    top: 20.5vw;
+    left: 15vw;
+    animation:10s noaparecer,10s 10s aparicion;
+    
+
+}
+
+.latIzq{
+    position: fixed;
+    top: 2vw;
+    left: 19vw;
+    animation:20s noaparecer,10s 20s aparicion;
+}
+
+.latDer{
+    position: fixed;
+    top: 39vw;
+    left: 19vw;
+    animation:30s noaparecer,10s 30s aparicion;
+}
+
+.mDef1{
+    position: fixed;
+    top: 13vw;
+    left: 37vw;
+    animation:40s noaparecer,10s 40s aparicion;
+}
+
+.mDef2{
+    position: fixed;
+    top: 26vw;
+    left: 37vw;
+    animation:50s noaparecer,10s 50s aparicion;
+}
+
+.medioIzq{
+    position: fixed;
+    top: 2vw;
+    left: 55vw;
+    animation:60s noaparecer,10s 60s aparicion;
+}
+
+.medioDer{
+    position: fixed;
+    top: 39vw;
+    left: 55vw;
+    animation:70s noaparecer,10s 70s aparicion;
+}
+
+.extIzq{
+    position: fixed;
+    top: 6.5vw;
+    left: 72vw;
+    animation:80s noaparecer,10s 80s aparicion;
+}
+
+.extDer{
+    position: fixed;
+    top: 34.5vw;
+    left: 72vw;
+    animation:90s noaparecer,10s 90s aparicion;
+}
+
+.delantero{
+    position: fixed;
+    top: 20.5vw;
+    left: 87vw;
+    animation:100s noaparecer,10s 100s aparicion;
+}
+
+@keyframes aparicion {
+    0%{
+        top:-10vw;
+        left:47vw;
+    }
+    50%{
+        top:20vw;
+        left:47vw;
+        transform: scale(2);
+    }
+}
+
+@keyframes noaparecer {
+    0%{
+        visibility: hidden;
+    }
+    100%{visibility: hidden;}
+}
+
+
